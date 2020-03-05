@@ -1,3 +1,6 @@
+**1.1.1**
+* NEW Compatibility v11 (CSRF)
+
 **1.1**
 * Add NF525 compatibility (for France)
 
