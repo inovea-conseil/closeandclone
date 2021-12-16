@@ -59,7 +59,7 @@ class modcloseandclone extends DolibarrModules
 		// Module description, used if translation string 'ModuleXXXDesc' not found (where XXX is value of numeric property 'numero' of module)
 		$this->description = "Module432435Desc";
 		// Possible values for version are: 'development', 'experimental', 'dolibarr' or version
-		$this->version = '1.1.1';
+		$this->version = '1.1.2';
                 $this->url_last_version = "https://www.dolibiz.com/wp-content/uploads/lastversion/last_version-closeandclone.txt";
 		// Key used in llx_const table to save module status enabled/disabled (where MYMODULE is value of property name of module in uppercase)
 		$this->const_name = 'MAIN_MODULE_'.strtoupper($this->name);

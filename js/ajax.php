@@ -24,6 +24,12 @@ require_once(DOL_DOCUMENT_ROOT . '/comm/propal/class/propal.class.php');
 
 $propal = new Propal($db);
 $propal->fetch($_POST['idpropal']);
-$propal->cloture($user, "3", $langs->trans("PropalCloned"));
+if (DOL_VERSION < 14) {
+    $propal->cloture($user, "3", $langs->trans("PropalCloned"));
+}
+else {
+    $res = $propal->closeProposal($user,  Propal::STATUS_NOTSIGNED);
+}
+
 
 

@@ -1,3 +1,6 @@
+**1.1.2**
+* NEW Compatibility v14 V15
+
 **1.1.1**
 * NEW Compatibility v11 (CSRF)
 

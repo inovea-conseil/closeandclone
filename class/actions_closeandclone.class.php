@@ -12,6 +12,7 @@ Class Actionscloseandclone {
         global $conf, $user, $langs, $object, $hookmanager, $db;
         $langs->load('closeandclone@closeandclone');
         if (in_array('propalcard', explode(':', $parameters['context']))) {
+            $db->begin();
             if ($object->statut != 3 && $object->statut !=0) {
                 $url = dol_buildpath('/closeandclone/js/ajax.php', 1);
                 print '<script type="text/javascript">';
@@ -29,6 +30,7 @@ Class Actionscloseandclone {
                 ";
             }
         }
+
         return 0;
     }
 
